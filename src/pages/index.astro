@@ -1,399 +1,287 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Ambathy Nature Research Foundation — Land for Trees, Land for Life',
+  description:
+    'Ambathy Nature Research Foundation (ANRF) combines scientific research, grassroots practice, and education to build living models of resilience where land heals, biodiversity thrives, and human beings flourish.',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+  <!-- HERO ***************************************************** -->
 
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Contact us',
+        href: '#contact',
+        icon: 'tabler:mail',
       },
-      { text: 'Learn more', href: '#features' },
+      {
+        text: 'Our projects',
+        href: '#projects',
+      },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'Forest and open land at ANRF' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      Ambathy Nature Research Foundation
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Combining <span class="font-semibold">scientific research, grassroots practice, and education</span> to create
+      living models of resilience — places where land heals, biodiversity thrives, and human beings flourish.
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
+  <!-- ABOUT ***************************************************** -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <section id="about" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        About Us
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <p>
+          Ambathy Nature Research Foundation (ANRF) combines <strong>scientific research, grassroots practice, and
+          education</strong> to build living models of resilience — places where land heals, biodiversity thrives, and
+          human beings flourish.
+        </p>
+        <p>
+          We are a team of experts and conscious people who believe that innovative design and implementation of
+          projects can lead to ecologically sound growth and development, anchored in <strong>beauty, harmony and
+          abundance</strong>.
+        </p>
+        <h3>Focus Areas</h3>
+        <ul>
+          <li>Land Use Research for freeing up <strong>“Land for Trees”</strong></li>
+          <li>Infrastructure and building footprint optimisation for maximising open spaces</li>
+          <li>
+            Optimising open spaces for habitat services and ecological functionality through intelligent design and
+            <strong>Nature Based Solutions (NBS)</strong>
+          </li>
+        </ul>
 
-  <!-- Features Widget *************** -->
+        <h3>Types of Projects &amp; Activities Undertaken</h3>
+        <ul>
+          <li>Ecological land use planning</li>
+          <li>Generating ecological baseline and long-term monitoring frameworks</li>
+          <li>Designing project metrics that align all stakeholders towards eco-conscious design and development</li>
+          <li>Ecological audits</li>
+          <li>Environmental Impact Assessments (EIA)</li>
+          <li>Botanical and biodiversity assessments</li>
+          <li>Quantifying the true ecological footprint of human activities</li>
+        </ul>
 
-  <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
-    items={[
-      {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
-    ]}
-  />
+        <p>
+          There was a time when the relationship between horses and humans changed civilisations. Today, we believe
+          that <strong>trees are that potent ally</strong> in the evolution of the planet and humanity. The extent and
+          nature of symbiosis between trees and human beings is poised to define the trajectory of humanity and the
+          planet in the age of climate change, massive resource extraction, growing population and hyper energy
+          consumption.
+        </p>
 
-  <!-- Content Widget **************** -->
+        <p>
+          Progressively manipulating more matter and energy is part of human nature. It is important for growth and
+          evolution of humanity. The question is – <strong>can we do this beautifully</strong> (aesthetics – a beautiful
+          heaven on earth), <strong>harmoniously</strong> (resolve negative externalities and become regenerative) and
+          <strong>abundantly</strong> (equity and inclusion)?
+        </p>
 
-  <Content
-    isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
-    items={[
-      {
-        title: 'Built on top of Astro 5.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
-      },
-      {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
-      },
-      {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
+        <h4>Land Use Classification</h4>
+        <ul>
+          <li>Land use classification of the world</li>
+          <li>Land use classification of India</li>
+          <li>Land use classification of Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  <!-- OBJECTIVES ************************************************ -->
 
-  <!-- Content Widget **************** -->
+  <section id="objectives" class="py-16 bg-slate-50 dark:bg-slate-900/40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        Objectives
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <p>We focus on five key impact areas:</p>
+        <ul>
+          <li>
+            🌱 <strong>Ecological Regeneration</strong> – healing degraded lands and forests
+          </li>
+          <li>
+            📚 <strong>Research &amp; Innovation</strong> – advancing regenerative farming and biodiversity science
+          </li>
+          <li>
+            👩‍🏫 <strong>Education</strong> – creating immersive learning programs for schools, colleges, and communities
+          </li>
+          <li>
+            🏞 <strong>Sustainable Planning</strong> – consultancy for eco-sensitive land use and development
+          </li>
+          <li>
+            🌏 <strong>Awareness &amp; Advocacy</strong> – inspiring ecological thinking at policy and community levels
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
-      },
-      {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
-      },
-      {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
-      {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
-    }}
-  >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+  <!-- COLLABORATION ********************************************* -->
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  <section id="collaborate" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        Ways to Collaborate
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <p>We invite individuals, institutions, and partners to walk with us:</p>
+        <ul>
+          <li>
+            🤝 <strong>Research Partnerships</strong> – co-design studies in ecology, farming, and biodiversity
+          </li>
+          <li>
+            🎓 <strong>Educational Programs</strong> – bring ANRF workshops to your institution or join ours in the field
+          </li>
+          <li>
+            🌿 <strong>Conservation Projects</strong> – volunteer in forest regeneration and soil restoration
+          </li>
+          <li>
+            🧭 <strong>Consultancy</strong> – engage ANRF for ecological land-use and sustainability planning
+          </li>
+          <li>
+            📣 <strong>Advocacy &amp; Awareness</strong> – co-create campaigns, publications, and policy inputs
+          </li>
+        </ul>
+        <p>
+          👉 <a href="https://www.notion.so/ANRF-website-27b276b5803a806a9feaff6aa4e0791d?pvs=21" target="_blank"
+            ><strong>Join us today</strong></a
+          >
+          – Together, we can multiply ecological impact.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  <!-- Content Widget **************** -->
+  <!-- PROJECTS & RESEARCH **************************************** -->
 
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
-    }}
-  >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+  <section id="projects" class="py-16 bg-slate-50 dark:bg-slate-900/40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        Projects &amp; Research
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <p>
+          Our initiatives bring theory to life. Each project is a <strong>demonstration site</strong>, designed for
+          learning, replicability, and impact.
+        </p>
+        <ul>
+          <li>
+            🌳 <strong>Revelation Forest</strong> – an outdoor classroom where hundreds of students and educators have
+            experienced hands-on ecological learning.
+          </li>
+          <li>
+            🍌 <strong>Experimental Organic Banana Farm (Tirunelveli, TN)</strong> – a living research site testing
+            regenerative soil practices, biodiversity enhancement, and sustainable food models.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  <!-- PARTNERSHIPS ********************************************** -->
 
-  <!-- Steps Widget ****************** -->
+  <section id="partnerships" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        Partnerships
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <p>
+          Partnership is at the heart of ANRF: we believe <strong>ecological change is only possible when knowledge and
+          action are shared.</strong>
+        </p>
+        <p>We collaborate with:</p>
+        <ul>
+          <li>🎓 <strong>Academic institutions</strong> for research and training</li>
+          <li>🌍 <strong>NGOs and community groups</strong> for grassroots action</li>
+          <li>🏛 <strong>Government agencies</strong> for policy and planning support</li>
+          <li>🌐 <strong>International networks</strong> to exchange knowledge and scale impact</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
+  <!-- BOARD & ADVISORY ****************************************** -->
 
-  <!-- Features2 Widget ************** -->
+  <section id="board" class="py-16 bg-slate-50 dark:bg-slate-900/40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        Board &amp; Advisory
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none">
+        <p>
+          Together, the Board and Advisor guide ANRF’s vision with decades of experience in education, conservation, and
+          public service.
+        </p>
 
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
+        <h3>Board of Directors</h3>
+        <ul>
+          <li><strong>Smt. Shantha Kumari</strong></li>
+          <li><strong>Sri. Arunachalam Kumaraswamy</strong></li>
+        </ul>
 
-  <!-- HighlightedPosts Widget ******* -->
+        <h3>Honorary Advisor</h3>
+        <ul>
+          <li><strong>Major. Arun Prakash Ambathy (Retd.)</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+  <!-- NEWSLETTER / CONTACT **************************************** -->
 
-  <!-- FAQs Widget ******************* -->
+  <section id="contact" class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-6">
+        Newsletter &amp; Contact
+      </h2>
+      <div class="prose prose-slate dark:prose-invert max-w-none mb-8">
+        <h3>Newsletter</h3>
+        <p>
+          Together, we can turn bare land into living forests, scarcity into abundance, and loss into renewal. Every
+          action matters — every tree, every soil, every learner inspired brings us closer to a thriving planet.
+        </p>
 
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    classes={{ container: 'max-w-6xl' }}
-    items={[
-      {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: 'What do I need to start?',
-        description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-      },
-      {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
+        <h3>Contact</h3>
+        <p>We’d love to hear from you. Whether you are a researcher, student, farmer, or policymaker — let’s restore ecosystems together.</p>
 
-  <!-- Stats Widget ****************** -->
+        <p>
+          📍 23, Srinivasa Raghavan Road, Srinivasa Nagar, Old Perungalathur, Tambaram, Chennai – 600063, Tamil Nadu
+        </p>
+        <p>
+          📧 Email:
+          <a href="mailto:contact@ambathy.in">contact@ambathy.in</a> |
+          <a href="mailto:landfortrees@gmail.com">landfortrees@gmail.com</a>
+        </p>
+        <p>
+          📱 Mobile:
+          <a href="tel:+918668084763">+91 86680 84763</a>
+        </p>
+      </div>
 
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+      <div class="border-t border-slate-200 dark:border-slate-700 pt-6 mt-4 text-sm text-slate-600 dark:text-slate-300">
+        <p>
+          Ambathy Nature Research Foundation (ANRF) is registered as a
+          <strong>Section 8 Not-for-Profit Company</strong> under the Companies Act, 2013. Registered with DARPAN.
+          CIT Number (to be added).
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
