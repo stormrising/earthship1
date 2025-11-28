@@ -119,52 +119,24 @@ export const headerData = {
 };
 
 export const footerData = {
-  links: [
-    {
-      title: 'Product',
-      links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
-  ],
+</div>
+
+        <!-- Legal line -->
+        <p class="text-sm text-muted leading-relaxed max-w-sm">
+          Ambathy Nature Research Foundation (ANRF) is registered as a
+          <strong>Section 8 Not-for-Profit Company</strong> under the Companies Act, 2013.  
+          Registered with DARPAN. CIT Number (to be added).
+        </p>
+
+        <!-- Green Hosting Badge -->
+        <img 
+          src="https://app.greenweb.org/api/v3/greencheckimage/earthship1.pages.dev?nocache=true" 
+          alt="This website runs on green hosting - verified by thegreenwebfoundation.org"
+          class="w-48 h-auto mt-2"
+        />
+
+      </div>
+  
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
