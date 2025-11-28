@@ -284,4 +284,59 @@ const metadata = {
       </div>
     </div>
   </section>
+
+
+<!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Ways to Collaborate"
+    subtitle="We invite individuals, institutions, and partners to walk with us:"
+    items={[
+    {
+      title: 'Research Partnerships',
+      description: 'Co-design studies in ecology, farming, and biodiversity with ANRF.',
+      icon: 'tabler:flask',
+    },
+    {
+      title: 'Educational Programs',
+      description: 'Bring ANRF workshops to your institution or join our field-based learning programs.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Conservation Projects',
+      description: 'Volunteer or collaborate in forest regeneration and soil restoration initiatives.',
+      icon: 'tabler:plant',
+    },
+    {
+      title: 'Consultancy',
+      description: 'Engage ANRF for ecological land-use and sustainability planning for your land or campus.',
+      icon: 'tabler:compass',
+    },
+    {
+      title: 'Advocacy & Awareness',
+      description: 'Co-create campaigns, publications, and policy inputs that foreground ecological thinking.',
+      icon: 'tabler:megaphone',
+    },
+  ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+
+
+
+<!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="ANRF's Projects"
+    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+
 </Layout>
