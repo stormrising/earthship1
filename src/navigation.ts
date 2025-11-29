@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink } from './utils/permalinks';
+import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -29,8 +29,8 @@ export const headerData = {
         { text: 'Lead Generation', href: getPermalink('/landing/lead-generation') },
         { text: 'Long-form Sales', href: getPermalink('/landing/sales') },
         { text: 'Click-Through', href: getPermalink('/landing/click-through') },
-        { text: 'Product Details', href: getPermalink('/landing/product') },
-        { text: 'Coming Soon', href: getPermalink('/landing/pre-launch') },
+        { text: 'Product Details (or Services)', href: getPermalink('/landing/product') },
+        { text: 'Coming Soon or Pre-Launch', href: getPermalink('/landing/pre-launch') },
         { text: 'Subscription', href: getPermalink('/landing/subscription') },
       ],
     },
@@ -46,7 +46,6 @@ export const headerData = {
     },
     { text: 'Widgets', href: '#' },
   ],
-
   actions: [
     { text: 'Download', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' },
   ],
@@ -105,12 +104,15 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
 
+  // 🌿 Your added item — placed safely inside socialLinks
   socialLinks: [
     {
+      ariaLabel: 'Green Hosting',
       text: 'Running on green hosting 🌳',
-      href: null,
+      href: '#',
     },
   ],
 
+  // 🌿 Your ANRF copyright — must be a simple string
   footNote: `© 2025 ANRF. All rights reserved.`,
 };
