@@ -169,8 +169,20 @@ export const footerData = {
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  socialLinks:,
-  footNote: `
-    © 2025 ANRF. All rights reserved.
-  `,
+  socialLinks:
+    [
+  {
+    text: 'Running on green hosting 🌳',
+    href: null,
+  },
+],
+  footNote: 
+     [
+  {
+    text: '© 2025 ANRF. All rights reserved.',
+    href: null,
+  },
+],
+    
+  `
 };
