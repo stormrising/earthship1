@@ -169,8 +169,8 @@ export const footerData = {
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
-  socialLinks: 'Running on green hosting 🌳',
+  socialLinks:,
   footNote: `
-    © 2025 ANRF· All rights reserved.
+    © 2025 ANRF. All rights reserved.
   `,
 };
