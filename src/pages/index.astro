@@ -1,6 +1,10 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 
 const metadata = {
   title: 'ANRF - Ambathy Nature Research Foundation',
@@ -29,7 +33,7 @@ const metadata = {
     image={{ src: '~/assets/images/hero-image.png', alt: 'Forest and open land at ANRF' }}
   >
     <Fragment slot="title">
-      Combining <span class="font-semibold">scientific research, grassroots practice, and education</span> to create
+      Combining scientific research, grassroots practice, and education to create
       living models of resilience — places where land heals and biodiversity thrives.
     </Fragment>
 
@@ -380,11 +384,13 @@ const metadata = {
   </BlogLatestPosts>
 
 
+
+
 <!-- Board & Advisory Section ************** -->
 
-  <Steps2
-    title="Board & Advisory"
-    subtitle="Together, the Board and Advisor guide ANRF’s vision with decades of experience in education, conservation, and public service."
+<Steps2
+  title="Board & Advisory"
+  subtitle="Together, the Board and Advisor guide ANRF’s vision with decades of experience in education, conservation, and public service."
   callToAction={{
     text: 'Contact ANRF',
     href: '#contact',
@@ -392,21 +398,19 @@ const metadata = {
   items={[
     {
       title: 'Board of Directors',
-      description: `
-        <strong>Smt. Shantha Kumari</strong><br />
-        <strong>Sri. Arunachalam Kumaraswamy</strong>
-      `,
+      description:
+        '<strong>Smt. Shantha Kumari</strong><br /><strong>Sri. Arunachalam Kumaraswamy</strong>',
       icon: 'tabler:users',
     },
     {
       title: 'Honorary Advisor',
-      description: `
-        <strong>Major. Arun Prakash Ambathy (Retd.)</strong>
-      `,
+      description:
+        '<strong>Major. Arun Prakash Ambathy (Retd.)</strong>',
       icon: 'tabler:shield-star',
     },
   ]}
-  />
+/>
+
 
 
 </Layout>
